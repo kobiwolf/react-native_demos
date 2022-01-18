@@ -1,13 +1,16 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
 
-export default function ListComponent() {
+export default function ListComponent({ navigation }) {
   const names = ['kobi', 'judi', 'mark', 'june'];
   const renderItem = (el) => {
     return (
-      <Text key={el.index} style={styles.listEl}>
-        {el.item}
-      </Text>
+      <View>
+        <Text key={el.index} style={styles.listEl}>
+          {el.item}
+        </Text>
+        <Button title='move to home' onPress={() => navigation.navigate('Home')} />
+      </View >
     );
   };
 
