@@ -5,6 +5,7 @@ import Ex1FlatList from './src/screens/Ex1.FlatList';
 import HomeScreen from './src/screens/HomeScreen';
 import ListComponent from './src/screens/ListComponent';
 import MyComponent from './src/screens/MyComponent';
+import PhotosComponent from './src/screens/PhotosComponent';
 
 const navigator = createStackNavigator(
   {
@@ -13,9 +14,10 @@ const navigator = createStackNavigator(
     List: ListComponent,
     ex1: Ex1FlatList,
     Button: ButtonComponent,
+    Photos: PhotosComponent,
   },
   {
-    initialRouteName: 'Button',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'App',
     },
