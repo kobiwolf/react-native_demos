@@ -6,6 +6,14 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Text style={styles.text}>HomeScreen</Text>
       <Button title='to Photos' onPress={() => navigation.navigate('Photos')} />
+      <Button
+        title='to Reducer'
+        onPress={() => navigation.navigate('Reducer')}
+      />
+      <Button
+        title='to BoxModel'
+        onPress={() => navigation.navigate('BoxModel')}
+      />
     </View>
   );
 };

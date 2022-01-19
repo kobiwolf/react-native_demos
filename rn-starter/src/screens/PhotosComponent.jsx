@@ -14,6 +14,7 @@ export default function PhotosComponent() {
     <View>
       <Text></Text>
       <FlatList
+        style={styles.list}
         data={sources}
         keyExtractor={keyExtractor}
         renderItem={renderItem}
@@ -22,4 +23,8 @@ export default function PhotosComponent() {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  list: {
+    // backgroundColor: 'red'
+  }
+});
