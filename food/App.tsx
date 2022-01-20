@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import BottomTabScreen from './src/screens/BottomTabScreen';
+import DrawerScreen from './src/screens/DarwerScreen';
+import Home from './src/screens/Home';
+const navigator = createStackNavigator(
+  {
+    Home: Home,
+    Drawer: DrawerScreen,
+    BottomTab: BottomTabScreen,
   },
-});
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      title: 'Food App',
+    },
+  }
+);
+
+export default createAppContainer(navigator);
