@@ -4,9 +4,17 @@ import React from 'react';
 export default function BoxModelComponent() {
     return (
         <View style={styles.container}>
-            <View style={[styles.square, styles.red]}>red</View>
-            <View style={[styles.square, styles.blue]}>blue</View>
-            <View style={[styles.square, styles.green]}>green</View>
+            <View style={[styles.square, styles.red]}>
+                <Text>
+                    red
+                </Text>
+            </View>
+            <View style={[styles.square, styles.blue]}>
+                <Text>blue</Text>
+            </View>
+            <View style={[styles.square, styles.green]}>
+                <Text>green</Text>
+            </View>
         </View>
     );
 }

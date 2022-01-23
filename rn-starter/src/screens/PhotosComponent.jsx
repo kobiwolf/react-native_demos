@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import PhotoComponent from '../../assets/components/PhotoComponent';
+import PhotoComponent from '../components/PhotoComponent';
 
 export default function PhotosComponent() {
   const sources = [

@@ -1,6 +1,6 @@
 import { View } from 'react-native';
 import React from 'react';
-import ReducerHookEx from '../../assets/components/ReducerHookEx';
+import ReducerHookEx from '../components/ReducerHookEx';
 
 export default function ReducerHookScreen() {
     return (
