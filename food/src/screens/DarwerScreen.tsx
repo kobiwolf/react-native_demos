@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function DrawerScreen() {
+function DrawerScreen() {
   return (
     <View>
       <Text>DrawerScreen</Text>
@@ -12,3 +12,5 @@ export default function DrawerScreen() {
 }
 
 const styles = StyleSheet.create({});
+
+export default DrawerScreen;

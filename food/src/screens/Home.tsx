@@ -1,8 +1,6 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { NavigationStackProp } from 'react-navigation-stack';
-import { AntDesign } from '@expo/vector-icons';
-
 interface IHomeProps {
   navigation: NavigationStackProp;
 }
@@ -18,6 +16,10 @@ export default function Home(props: IHomeProps) {
       <Button
         title='BottomTab'
         onPress={() => props.navigation.navigate('BottomTab')}
+      />
+      <Button
+        title='Search'
+        onPress={() => props.navigation.navigate('Search')}
       />
     </View>
   );
